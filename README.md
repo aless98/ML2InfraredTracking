@@ -57,7 +57,7 @@ You define a custom tool geometry and its marker constellation (in meters) and t
 
 ---
 
-## Before You Start (Critical Sync Note)
+## Before You Start (Critical Sync Note) - Only if you use the plugin in another project!
 
 To prevent hologram drift you **must synchronize** the **depth sensor pose** with the **exact depth frame** you process.  
 This requires a **small SDK change**: modify the function that retrieves the depth sensor pose so it accepts an **additional property** in the `GetPose` call.
