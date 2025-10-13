@@ -1,0 +1,26 @@
+# Unity caches
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# IDE / sistema
+.vs/
+*.user
+*.unityproj
+*.sln
+*.csproj
+*.pidb
+*.svd
+*.userprefs
+.DS_Store
+Thumbs.db
+
+# Crash / profiling
+*.stacktrace
+
+# Visual Studio Code
+.vscode/
