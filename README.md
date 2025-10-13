@@ -78,8 +78,6 @@ https://forum.magicleap.cloud/t/hologram-drift-issue-when-tracking-object-with-r
    In this repo the binary is at:
 Assets/Plugins/Android/libs/x86_64/libml2irtrackingplugin.so
 
-sql
-Copy code
 Copy **all required `.so` files** into your new project under:
 Assets/Plugins/Android/libs/x86_64/
 
