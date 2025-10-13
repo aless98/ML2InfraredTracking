@@ -1,3 +1,79 @@
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/57902f5f-a6f7-4091-a4d4-b5da3bcca07d"
+       alt="ML2InfraredTracking logo" width="192">
+</div>
+
+<h1 align="center">ML2InfraredTracking</h1>
+
+<p align="center">
+  Magic Leap 2 plugin for tracking tools equipped with infrared retroreflective markers using the Depth (RAW) sensor.
+  <br/>
+  <b>Status:</b> tracking is <b>stable with 5 co-planar markers</b>. <b>4-marker</b> mode is under active development.
+</p>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/0c1ac69a-985b-450e-a2c6-fcc5e9d3a6b6"
+       alt="IR tracking demo GIF" />
+  <p>Example: a tool tracked by the Magic Leap 2 Depth RAW (IR) sensor</p>
+</div>
+
+---
+
+## Table of Contents
+- [Overview](#overview)
+- [Before You Start (Critical Sync Note)](#before-you-start-critical-sync-note)
+- [Using in Another Unity Project](#using-in-another-unity-project)
+- [What This Sample Provides](#what-this-sample-provides)
+- [Project Setup](#project-setup)
+  - [Define Your Tool (TrackedTool GameObject)](#define-your-tool-trackedtool-gameobject)
+  - [Scripts](#scripts)
+  - [(Optional) Visualize the Depth Frame](#optional-visualize-the-depth-frame)
+- [Versions & Requirements](#versions--requirements)
+- [Quick Start](#quick-start)
+- [Notes & Tips](#notes--tips)
+- [Roadmap](#roadmap)
+- [License](#license)
+
+---
+
+## Overview
+
+**ML2InfraredTracking** is a Unity sample/plugin that demonstrates robust **infrared retroreflective marker** tracking on **Magic Leap 2** using the **Depth RAW** stream.  
+You define a custom tool geometry and its marker constellation (in meters) and the plugin estimates the tool pose from IR depth data.
+
+> **Current stability:** Solid with **5 co-planar markers**.  
+> **4-marker mode:** Under hardening (dual-solution handling on planar PnP + temporal filtering).
+
+---
+
+## Before You Start (Critical Sync Note)
+
+To prevent hologram drift you **must synchronize** the **depth sensor pose** with the **exact depth frame** you process.  
+This requires a **small SDK change**: modify the function that retrieves the depth sensor pose so it accepts an **additional property** in the `GetPose` call.
+
+Follow the steps in the Magic Leap forum thread:  
+https://forum.magicleap.cloud/t/hologram-drift-issue-when-tracking-object-with-retroreflective-markers-using-depth-camera-raw-data/5618/5
+
+> Without this sync, pose/frame misalignment will cause visible drift.
+
+---
+
+## Using in Another Unity Project
+
+1) **Apply the SDK change**  
+   Update the SDK function that fetches the depth sensor pose to pass the extra property to `GetPose` (see link above).
+
+2) **Copy the native plugin**  
+   In this repo the binary is at:
+Assets/Plugins/Android/libs/x86_64/libml2irtrackingplugin.so
+
+sql
+Copy code
+Copy **all required `.so` files** into your new project under:
+Assets/Plugins/Android/libs/x86_64/
+
+yaml
+Copy code
 
 3) **Verify Unity importer settings**  
 - Select each `.so` in Unity: **Platform = Android**, **CPU = x86_64**.  
