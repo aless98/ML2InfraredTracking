@@ -1,37 +1,13 @@
 {
     "m_SelectedDeviceId": "G182XT100014",
     "m_SelectedProcess": {
-        "deviceId": "G182XT100014",
-        "name": "com.UnityTechnologies.com.GitHubrepotrackingtest",
-        "processId": 24308,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 1,
     "m_KnownProcessesForSerialization": [
-        {
-            "deviceId": "G182XT100014",
-            "name": "com.android.settings",
-            "processId": 4643,
-            "exited": false
-        },
-        {
-            "deviceId": "G182XT100014",
-            "name": "com.UnityTechnologies.com.GitHubrepotrackingtest",
-            "processId": 13459,
-            "exited": true
-        },
-        {
-            "deviceId": "G182XT100014",
-            "name": "com.UnityTechnologies.com.GitHubrepotrackingtest",
-            "processId": 15452,
-            "exited": true
-        },
-        {
-            "deviceId": "G182XT100014",
-            "name": "com.UnityTechnologies.com.GitHubrepotrackingtest",
-            "processId": 17063,
-            "exited": true
-        },
         {
             "deviceId": "G182XT100014",
             "name": "com.UnityTechnologies.com.GitHubrepotrackingtest",
@@ -42,18 +18,36 @@
             "deviceId": "G182XT100014",
             "name": "com.UnityTechnologies.com.GitHubrepotrackingtest",
             "processId": 19212,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "G182XT100014",
             "name": "com.UnityTechnologies.com.GitHubrepotrackingtest",
             "processId": 20711,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "G182XT100014",
             "name": "com.UnityTechnologies.com.GitHubrepotrackingtest",
             "processId": 24308,
+            "exited": true
+        },
+        {
+            "deviceId": "G182XT100014",
+            "name": "com.android.settings",
+            "processId": 4688,
+            "exited": false
+        },
+        {
+            "deviceId": "G182XT100014",
+            "name": "com.magicleap.homemenu",
+            "processId": 6444,
+            "exited": false
+        },
+        {
+            "deviceId": "G182XT100014",
+            "name": "com.UnityTechnologies.com.GitHubrepotrackingtest",
+            "processId": 7024,
             "exited": false
         }
     ],
