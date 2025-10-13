@@ -41,7 +41,7 @@
   - [(Optional) Visualize the Depth Frame](#optional-visualize-the-depth-frame)
 - [Versions & Requirements](#versions--requirements)
 - [Quick Start](#quick-start)
-- [License and Citations](#License and Citations)
+- [License and Citations](#license--citations)
 
 ---
 
@@ -167,7 +167,7 @@ Materials are included in the project’s **Materials** folder.
 
 ---
 
-## License and Citations
+## License & Citations
 
 If you use this project or the library contained within, please cite:
 
