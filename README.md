@@ -164,15 +164,13 @@ Materials are included in the project’s **Materials** folder.
 ## Quick Start
 
 1. Clone the repo and open it in Unity.  
-2. Apply the **SDK pose function modification** (see [Before You Start](#before-you-start-critical-sync-note)).  
-3. In the scene, select **`TrackedTool`**:
+2. In the scene, select **`TrackedTool`**:
 - Assign the **Tool** mesh.
 - Enter **Marker** positions (meters) in the tool frame.
-4. On **`IRToolManager`**:
+3. On **`IRToolManager`**:
 - Assign the **Markers** list.
 - Select the target **Tool**.
-5. (Optional) Add a quad with **`DepthMat`** to preview **Depth RAW**.
-6. Build & run on **Magic Leap 2**.
+4. Build & run on **Magic Leap 2**.
 
 ---
 
