@@ -12,8 +12,19 @@
 </p>
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/0c1ac69a-985b-450e-a2c6-fcc5e9d3a6b6"
-       alt="IR tracking demo GIF" />
+  <img
+    src="https://github.com/user-attachments/assets/0c1ac69a-985b-450e-a2c6-fcc5e9d3a6b6"
+    alt="IR tracking demo GIF"
+    width="360"
+    style="margin-right:16px;"
+  />
+  <img
+    src="https://github.com/user-attachments/assets/70be2177-1cf8-489d-9b29-31e20ef32820"
+    alt="IR tracking demo GIF"
+    width="360"
+    style="margin-left:16px;"
+  />
+  <br/>
   <p>Example: a tool tracked by the Magic Leap 2 Depth RAW (IR) sensor</p>
 </div>
 
@@ -42,7 +53,7 @@
 You define a custom tool geometry and its marker constellation (in meters) and the plugin estimates the tool pose from IR depth data.
 
 > **Current stability:** Solid with **5 co-planar markers**.  
-> **4-marker mode:** Under hardening (dual-solution handling on planar PnP + temporal filtering).
+> **4-marker mode:** Under hardening.
 
 ---
 
@@ -165,25 +176,17 @@ Materials are included in the project’s **Materials** folder.
 
 ---
 
-## Notes & Tips
+## License and Citations
 
-- **Units** — Always use **meters** (mesh scale and marker coordinates).  
-- **Stability** — Production-ready with **5 co-planar markers**; **4-marker** mode is being hardened (planar PnP with dual-solution handling + hysteresis).  
-- **Depth RAW** — Ensure you request **Depth RAW** frames if you want the IR visualization path.  
-- **Performance** — Reuse buffers in Update/OnRender frames to avoid GC spikes.  
-- **Calibration** — Better calibration → lower jitter and better absolute scale.
+If you use this project or the library contained within, please cite:
 
----
+```bibtex
+@misc{Albanesi2025ML2InfraredTracking,
+  author       = {Alessandro Albanesi},
+  title        = {ML2InfraredTracking: Magic Leap 2 Infrared Tracking},
+  howpublished = {\url{https://github.com/aless98/ML2InfraredTracking}},
+  year         = {2025}
+}
+```
 
-## Roadmap
-
-- [x] Stable 5-marker (co-planar) tracking  
-- [ ] Harden 4-marker planar mode (dual-solution handling + temporal hysteresis)  
-- [ ] Additional sample scenes & prefabs  
-- [ ] Optional temporal filters (Kalman / EMA) presets
-
----
-
-## License
-
-MIT (or your preferred license).
+A. Albanesi, ML2InfraredTracking: Magic Leap 2 Infrared Tracking. 2025. [Online]. Available: https://github.com/aless98/ML2InfraredTracking
