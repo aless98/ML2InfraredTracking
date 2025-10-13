@@ -41,9 +41,7 @@
   - [(Optional) Visualize the Depth Frame](#optional-visualize-the-depth-frame)
 - [Versions & Requirements](#versions--requirements)
 - [Quick Start](#quick-start)
-- [Notes & Tips](#notes--tips)
-- [Roadmap](#roadmap)
-- [License](#license)
+- [License and Citations](#License and Citations)
 
 ---
 
