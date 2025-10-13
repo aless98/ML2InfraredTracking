@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/57902f5f-a6f7-4091-a4d4-b5da3bcca07d"
-       alt="ML2InfraredTracking logo" width="192">
+       alt="ML2InfraredTracking logo" width="312">
 </div>
 
 <h1 align="center">ML2InfraredTracking</h1>
@@ -41,9 +41,7 @@
   - [(Optional) Visualize the Depth Frame](#optional-visualize-the-depth-frame)
 - [Versions & Requirements](#versions--requirements)
 - [Quick Start](#quick-start)
-- [Notes & Tips](#notes--tips)
-- [Roadmap](#roadmap)
-- [License](#license)
+- [License and Citations](#license--citations)
 
 ---
 
@@ -57,7 +55,7 @@ You define a custom tool geometry and its marker constellation (in meters) and t
 
 ---
 
-## Before You Start (Critical Sync Note)
+## Before You Start - Only if you use the plugin in another project!
 
 To prevent hologram drift you **must synchronize** the **depth sensor pose** with the **exact depth frame** you process.  
 This requires a **small SDK change**: modify the function that retrieves the depth sensor pose so it accepts an **additional property** in the `GetPose` call.
@@ -78,13 +76,9 @@ https://forum.magicleap.cloud/t/hologram-drift-issue-when-tracking-object-with-r
    In this repo the binary is at:
 Assets/Plugins/Android/libs/x86_64/libml2irtrackingplugin.so
 
-sql
-Copy code
 Copy **all required `.so` files** into your new project under:
 Assets/Plugins/Android/libs/x86_64/
 
-yaml
-Copy code
 
 3) **Verify Unity importer settings**  
 - Select each `.so` in Unity: **Platform = Android**, **CPU = x86_64**.  
@@ -97,11 +91,9 @@ Copy code
 ## What This Sample Provides
 
 - A minimal pipeline to ingest **Depth RAW** frames and estimate tool pose from **retroreflective IR markers**.
-- A **TrackedTool** prefab where you provide:
-- the tool’s **3D geometry** (for visualization), and
-- the **marker coordinates** in the tool’s frame (**meters**).
-- Example materials and a basic **Depth RAW** visualization path.
-
+- two **Tools** sample geometries (3D files and markers coordinates).
+- Example materials and **Depth RAW** visualization path.
+- 
 ---
 
 ## Project Setup
@@ -140,6 +132,7 @@ Attach to any GameObject to enforce **reprojection to depth**, improving hologra
 
 Render the depth image on a quad/plane:
 
+- Target Renderer: **the Renderer where to visualize the depth stream**
 - Material: **`DepthMat`**  
 - Frame type: **Depth RAW**  
 - Frame Type Material: **`DepthRawMat`**
@@ -156,8 +149,8 @@ Materials are included in the project’s **Materials** folder.
 
 - **Unity**: 2022.3.61f1 (LTS recommended)  
 - **Magic Leap 2**: ML2 OS **1.12.0**, MLSDK **1.12.0**  
-- App permissions to access **Depth**  
-- (Recommended) Proper **depth camera calibration** (e.g., checkerboard workflow)
+- App permissions to access **Depth** and **Camera**
+- (Recommended) Proper **depth camera calibration** (e.g., checkerboard calibration)
 
 ---
 
@@ -174,7 +167,7 @@ Materials are included in the project’s **Materials** folder.
 
 ---
 
-## License and Citations
+## License & Citations
 
 If you use this project or the library contained within, please cite:
 
