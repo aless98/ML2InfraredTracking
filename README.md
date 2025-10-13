@@ -81,8 +81,6 @@ Assets/Plugins/Android/libs/x86_64/libml2irtrackingplugin.so
 Copy **all required `.so` files** into your new project under:
 Assets/Plugins/Android/libs/x86_64/
 
-yaml
-Copy code
 
 3) **Verify Unity importer settings**  
 - Select each `.so` in Unity: **Platform = Android**, **CPU = x86_64**.  
@@ -95,11 +93,9 @@ Copy code
 ## What This Sample Provides
 
 - A minimal pipeline to ingest **Depth RAW** frames and estimate tool pose from **retroreflective IR markers**.
-- A **TrackedTool** prefab where you provide:
-- the tool’s **3D geometry** (for visualization), and
-- the **marker coordinates** in the tool’s frame (**meters**).
-- Example materials and a basic **Depth RAW** visualization path.
-
+- two **Tools** sample geometries (3D files and markers coordinates).
+- Example materials and **Depth RAW** visualization path.
+- 
 ---
 
 ## Project Setup
@@ -138,6 +134,7 @@ Attach to any GameObject to enforce **reprojection to depth**, improving hologra
 
 Render the depth image on a quad/plane:
 
+- Target Renderer: **the Renderer where to visualize the depth stream**
 - Material: **`DepthMat`**  
 - Frame type: **Depth RAW**  
 - Frame Type Material: **`DepthRawMat`**
@@ -154,8 +151,8 @@ Materials are included in the project’s **Materials** folder.
 
 - **Unity**: 2022.3.61f1 (LTS recommended)  
 - **Magic Leap 2**: ML2 OS **1.12.0**, MLSDK **1.12.0**  
-- App permissions to access **Depth**  
-- (Recommended) Proper **depth camera calibration** (e.g., checkerboard workflow)
+- App permissions to access **Depth** and **Camera**
+- (Recommended) Proper **depth camera calibration** (e.g., checkerboard calibration)
 
 ---
 
