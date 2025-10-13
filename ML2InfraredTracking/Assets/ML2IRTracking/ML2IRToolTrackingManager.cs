@@ -121,7 +121,9 @@ public class ML2ToolTrackingManager : MonoBehaviour
             Debug.LogWarning("[ML2Tracking] No markers assigned.");
         }
 
-        // Depth sensor Intrinsics.
+        // Depth sensor Intrinsics. This are the results of a camera calibration pipeline performed offline.
+        // You can use the default intrinsic parameters provided by the sensor's metadata
+
         _cameraMatrixNative[0] = 365.3747f; _cameraMatrixNative[1] = 0.0f; _cameraMatrixNative[2] = 262.2158f;
         _cameraMatrixNative[3] = 0.0f; _cameraMatrixNative[4] = 364.9302f; _cameraMatrixNative[5] = 240.9972f;
         _cameraMatrixNative[6] = 0.0f; _cameraMatrixNative[7] = 0.0f; _cameraMatrixNative[8] = 1.0f;
