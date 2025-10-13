@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/57902f5f-a6f7-4091-a4d4-b5da3bcca07d"
-       alt="ML2InfraredTracking logo" width="192">
+       alt="ML2InfraredTracking logo" width="312">
 </div>
 
 <h1 align="center">ML2InfraredTracking</h1>
