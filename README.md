@@ -178,11 +178,9 @@ If you use this project or the library contained within, please cite:
   year         = {2025}
 }
 ```
+A. Albanesi, ML2InfraredTracking: Magic Leap 2 Infrared Tracking. 2025. [Online]. Available: https://github.com/aless98/ML2InfraredTracking
+
 
 ## Acknowledgments
 
 This project gratefully acknowledges the **HL2-DINO** repository and its author for their work and inspiration: https://github.com/HL2-DINO
-
-
-
-A. Albanesi, ML2InfraredTracking: Magic Leap 2 Infrared Tracking. 2025. [Online]. Available: https://github.com/aless98/ML2InfraredTracking
