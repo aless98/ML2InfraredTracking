@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/57902f5f-a6f7-4091-a4d4-b5da3bcca07d"
-       alt="ML2InfraredTracking logo" width="312">
+       alt="ML2InfraredTracking logo" width="300">
 </div>
 
 <h1 align="center">ML2InfraredTracking</h1>
@@ -15,13 +15,13 @@
   <img
     src="https://github.com/user-attachments/assets/0c1ac69a-985b-450e-a2c6-fcc5e9d3a6b6"
     alt="IR tracking demo GIF"
-    width="360"
+    width="250"
     style="margin-right:16px;"
   />
   <img
     src="https://github.com/user-attachments/assets/70be2177-1cf8-489d-9b29-31e20ef32820"
     alt="IR tracking demo GIF"
-    width="360"
+    width="250"
     style="margin-left:16px;"
   />
   <br/>
