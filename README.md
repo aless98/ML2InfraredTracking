@@ -32,9 +32,9 @@
 
 ## Table of Contents
 - [Overview](#overview)
+- [What This Sample Provides](#what-this-sample-provides)
 - [Before You Start (Critical Sync Note)](#before-you-start-critical-sync-note)
 - [Using in Another Unity Project](#using-in-another-unity-project)
-- [What This Sample Provides](#what-this-sample-provides)
 - [Project Setup](#project-setup)
   - [Define Your Tool (TrackedTool GameObject)](#define-your-tool-trackedtool-gameobject)
   - [Scripts](#scripts)
@@ -53,6 +53,13 @@ You define a custom tool geometry and its marker constellation (in meters) and t
 > **Current stability:** Solid with **5 co-planar markers**.  
 > **4-marker mode:** Under hardening.
 
+---
+
+## What This Sample Provides
+
+- A minimal pipeline to ingest **Depth RAW** frames and estimate tool pose from **retroreflective IR markers**.
+- two **Tools** sample geometries (3D files and markers coordinates).
+- Example materials and **Depth RAW** visualization path.
 ---
 
 ## Before You Start - Only if you use the plugin in another project!
@@ -86,14 +93,6 @@ Assets/Plugins/Android/libs/x86_64/
 
 4) **Rebuild & run** on Magic Leap 2.
 
----
-
-## What This Sample Provides
-
-- A minimal pipeline to ingest **Depth RAW** frames and estimate tool pose from **retroreflective IR markers**.
-- two **Tools** sample geometries (3D files and markers coordinates).
-- Example materials and **Depth RAW** visualization path.
-- 
 ---
 
 ## Project Setup
@@ -179,5 +178,11 @@ If you use this project or the library contained within, please cite:
   year         = {2025}
 }
 ```
+
+## Acknowledgments
+
+This project gratefully acknowledges the **HL2-DINO** repository and its author for their work and inspiration: https://github.com/HL2-DINO
+
+
 
 A. Albanesi, ML2InfraredTracking: Magic Leap 2 Infrared Tracking. 2025. [Online]. Available: https://github.com/aless98/ML2InfraredTracking
