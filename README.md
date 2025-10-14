@@ -103,7 +103,7 @@ Assets/Plugins/Android/libs/x86_64/
 - **Marker** — the **marker coordinates** in the tool’s reference frame (**meters**).
 
 <div align="center">
-<img width="251" height="114" alt="TrackedTool inspector" src="https://github.com/user-attachments/assets/879c8c8d-8cd7-445a-908a-792d5310fba9" />
+<img width="200" height="200" alt="TrackedTool inspector" src="https://github.com/user-attachments/assets/879c8c8d-8cd7-445a-908a-792d5310fba9" />
 </div>
 
 > ⚠️ Keep units in **meters** to obtain a correct pose scale.
@@ -114,7 +114,7 @@ Assets/Plugins/Android/libs/x86_64/
 Attach and configure **IRToolManager** to run the IR tool tracking.
 
 <div align="center">
-<img width="559" height="437" alt="IRToolManager inspector" src="https://github.com/user-attachments/assets/da191758-b1dd-4c8a-a33d-dc4c09d012db" />
+<img width="320" height="320" alt="IRToolManager inspector" src="https://github.com/user-attachments/assets/da191758-b1dd-4c8a-a33d-dc4c09d012db" />
 </div>
 
 - Drag & drop the **Markers** GameObject list.  
@@ -139,7 +139,7 @@ Render the depth image on a quad/plane:
 Materials are included in the project’s **Materials** folder.
 
 <div align="center">
-<img width="540" height="196" alt="Depth material setup" src="https://github.com/user-attachments/assets/a5d3fc9f-9858-4d6b-b60b-bf3842cb9ced" />
+<img width="320" height="320" alt="Depth material setup" src="https://github.com/user-attachments/assets/a5d3fc9f-9858-4d6b-b60b-bf3842cb9ced" />
 </div>
 
 ---
