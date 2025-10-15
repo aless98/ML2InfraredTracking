@@ -134,7 +134,7 @@ Render the depth image on a quad/plane:
 - Target Renderer: **the Renderer where to visualize the depth stream**
 - Material: **`DepthMat`**  
 - Frame type: **Depth RAW**  
-- Frame Type Material: **`DepthRawMat`**
+- Frame Type Material: **`DepthRawMat`** (check that this material uses the DepthSensorShader)
 
 Materials are included in the project’s **Materials** folder.
 
