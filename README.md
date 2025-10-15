@@ -122,7 +122,7 @@ Attach and configure **IRToolManager** to run the IR tool tracking.
 
 #### 2) `DepthSensor` API — enable Depth RAW streaming
 This component enables depth streaming.  
-Set **XROrigin** (Camera Offset) and assign **IRToolManager** to the stream visualizer field.
+Set **XROrigin** and assign **IRToolManager** to the stream visualizer field.
 
 #### 3) `ReprojectionTest` — stabilize holograms
 Attach to any GameObject to enforce **reprojection to depth**, improving hologram stability (especially for the tracked tool).
